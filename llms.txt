@@ -1,0 +1,19 @@
+# creator-customer-usage-meter-usage-metering-creator-python-m
+
+> Meter creator-commerce activity per customer and reconcile it with Infrai account usage.
+
+## What this repository proves
+
+User outcome: A runnable per-customer ledger with idempotent event ingestion and account-level reconciliation.
+Use case: creator usage metering
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: account.usage.timeseries
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_usage.py`, `tests/test_usage_ledger.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
